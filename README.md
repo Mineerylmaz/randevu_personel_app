@@ -1,192 +1,75 @@
-````md
 <div align="center">
 
-# Randevu Personel Uygulaması
+# 🗓️ Randevu Personel Uygulaması
+**Modern, çok kiracılı (multi-tenant) randevu yönetim sistemi.**
 
-Modern, çok kiracılı (multi-tenant) randevu sisteminin personel yönetim uygulaması.
+[![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
+[![Dart](https://img.shields.io/badge/Dart-3.x-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev)
+[![Node.js](https://img.shields.io/badge/Node.js-Express-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org)
+[![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com)
+[![JWT](https://img.shields.io/badge/JWT-Authentication-black?style=for-the-badge&logo=jsonwebtokens)](https://jwt.io)
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Flutter-3.x-02569B?style=for-the-badge&logo=flutter&logoColor=white" />
-  <img src="https://img.shields.io/badge/Dart-3.x-0175C2?style=for-the-badge&logo=dart&logoColor=white" />
-  <img src="https://img.shields.io/badge/Node.js-Express-339933?style=for-the-badge&logo=node.js&logoColor=white" />
-  <img src="https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
-  <img src="https://img.shields.io/badge/JWT-Authentication-black?style=for-the-badge&logo=jsonwebtokens" />
-</p>
-
-<br>
-
-<img src="screenshots/cover.png" width="100%" />
+<img src="screenshots/cover.png" width="100%" style="border-radius: 10px;" />
 
 </div>
 
 ---
 
-# Proje Hakkında
+## 📖 Proje Hakkında
+Randevu Personel Uygulaması, işletme çalışanlarının randevu trafiğini, çalışma saatlerini ve müşteri geri bildirimlerini uçtan uca yönetebilmesi için tasarlanmış modern bir mobil çözümdür.
 
-Randevu Personel Uygulaması, işletmelerde çalışan personellerin randevu süreçlerini yönetebilmesi için geliştirilmiş modern bir Flutter uygulamasıdır.
-
-Uygulama sayesinde personeller:
-
-- Kendilerine gelen randevuları görüntüleyebilir
-- Randevu onaylayabilir veya iptal edebilir
-- Çalışma saatlerini görüntüleyebilir
-- Profil bilgilerini düzenleyebilir
-- Profil fotoğrafı yükleyebilir
-- Şifre değiştirebilir
-- Kendilerine yapılan yorum ve puanları görüntüleyebilir
-
-Mobil arayüz Flutter ile geliştirilmiş olup backend tarafında Node.js + Express.js ve MySQL kullanılmıştır.
+### 🌟 Öne Çıkan Özellikler
+* **Akıllı Randevu Yönetimi:** Onaylama, iptal ve durum filtreleme.
+* **Dinamik Profil:** Fotoğraf yükleme ve güvenli şifre yönetimi.
+* **Müsaitlik Takibi:** Çalışma saatlerini anlık görüntüleme.
+* **Performans Analizi:** Müşteri puanları ve yorumları üzerinden geri bildirim.
 
 ---
 
-# Özellikler
+## 📱 Uygulama Ekran Görüntüleri
 
-## Randevu Yönetimi
 
-- Yaklaşan randevuları listeleme
-- Bekleyen randevuları onaylama
-- Randevu iptal etme
-- Durum bazlı filtreleme sistemi
-- Detaylı randevu görüntüleme
-
----
-
-## Profil Sistemi
-
-- Profil fotoğrafı yükleme
-- Profil bilgilerini düzenleme
-- Şifre değiştirme
-- Kalıcı kullanıcı oturumu
-
----
-
-## Çalışma Saatleri
-
-- Personel çalışma günlerini görüntüleme
-- Çalışma saatlerini listeleme
-- Müsaitlik yönetimi altyapısı
+<table border="0">
+ <tr>
+    <td align="center"><b>Giriş Ekranı</b></td>
+    <td align="center"><b>Ana Sayfa</b></td>
+    <td align="center"><b>Profil</b></td>
+    <td align="center"><b>Yorumlar</b></td>
+ </tr>
+ <tr>
+    <td><img src="https://github.com/user-attachments/assets/34784a8b-7bff-4977-843e-91ecd73a0664" width="200" /></td>
+    <td><img src="https://github.com/user-attachments/assets/99bb5def-1104-47cd-b929-9dd80a2b1b89" width="200" /></td>
+    <td><img src="https://github.com/user-attachments/assets/99569f2d-71be-4bb1-b6ba-f68ca2ec9fcf" width="200" /></td>
+    <td><img src="https://github.com/user-attachments/assets/22201de5-ec41-42ef-bc97-44e389b5338b" width="200" /></td>
+ </tr>
+</table>
 
 ---
 
-## Yorum & Puan Sistemi
+## 🛠️ Kullanılan Teknolojiler
 
-- Müşteri yorumlarını görüntüleme
-- Ortalama puan sistemi
-- Personel geri bildirim ekranı
-
----
-
-# Kullanılan Teknolojiler
-
-| Teknoloji | Açıklama |
-|---|---|
-| Flutter | Mobil uygulama |
-| Dart | Uygulama dili |
-| Node.js | Backend |
-| Express.js | REST API |
-| MySQL | Veritabanı |
-| JWT | Kimlik doğrulama |
-| Dio | HTTP istemcisi |
-| SharedPreferences | Token saklama |
-
----
-
-# Mimari Yapı
-
-```text
-Flutter Uygulaması
-        ↓
-REST API (Express.js)
-        ↓
-JWT Authentication Middleware
-        ↓
-MySQL Veritabanı
-````
-
----
-
-# Uygulama Görselleri
-
-## Giriş Ekranı
-
-<img width="415" height="712" alt="image" src="https://github.com/user-attachments/assets/34784a8b-7bff-4977-843e-91ecd73a0664" />
-
-
----
-
-## Ana Sayfa
-
-<img width="325" height="690" alt="image" src="https://github.com/user-attachments/assets/99bb5def-1104-47cd-b929-9dd80a2b1b89" />
-
+| Kategori | Teknoloji | Açıklama |
+| :--- | :--- | :--- |
+| **Mobil** | Flutter & Dart | UI & İş Mantığı |
+| **Backend** | Node.js / Express | RESTful API |
+| **Veritabanı** | MySQL | İlişkisel Veri Yönetimi |
+| **Güvenlik** | JWT & Middleware | Kimlik Doğrulama |
+| **Network** | Dio | HTTP İletişimi |
 
 ---
 
 
-## Profil Sayfası
 
-<img width="348" height="731" alt="image" src="https://github.com/user-attachments/assets/99569f2d-71be-4bb1-b6ba-f68ca2ec9fcf" />
+🚀 Gelecek Planları
+ Push Notification Entegrasyonu
 
+ Dark Mode Desteği
 
----
+ Çoklu Dil (i18n) Desteği
 
-## Yorum & Puanlar
+  Google Takvim Entegrasyonu
 
-<img width="351" height="727" alt="image" src="https://github.com/user-attachments/assets/22201de5-ec41-42ef-bc97-44e389b5338b" />
-
-
----
-
-# Klasör Yapısı
-
-```bash
-lib/
- ├── core/
- ├── features/
- │    ├── auth/
- │    ├── appointments/
- │    ├── profile/
- │    ├── reviews/
- │    └── working_hours/
- ├── widgets/
- └── main.dart
-```
-
----
-
-# Backend
-
-Mobil uygulama, özel olarak geliştirilen REST API ile haberleşmektedir.
-
-Backend tarafında:
-
-* Express.js
-* MySQL
-* JWT Authentication
-* Multi-tenant yapı
-* Middleware tabanlı güvenlik sistemi
-
-kullanılmıştır.
-
----
-
-# Gelecekte Planlanan Özellikler
-
-* Push notification sistemi
-* Gerçek zamanlı güncellemeler
-* Gelişmiş istatistik ekranları
-* Takvim entegrasyonları
-* Dark mode
-* Çoklu dil desteği
-
----
-
-# Geliştirici
-
-<div align="center">
-
-### Mine Eryılmaz
-
-Flutter • Node.js • MySQL
-
-</div>
+👤 Geliştirici
+Mine Eryılmaz
+Mobile & Backend Developer
 ```
