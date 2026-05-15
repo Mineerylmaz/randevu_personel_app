@@ -9,7 +9,7 @@
 [![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com)
 [![JWT](https://img.shields.io/badge/JWT-Authentication-black?style=for-the-badge&logo=jsonwebtokens)](https://jwt.io)
 
-<img src="screenshots/cover.png" width="100%" style="border-radius: 10px;" />
+
 
 </div>
 
